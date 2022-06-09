@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+:root{
+    --negro-color:#191919;
+	--blanco-color:#ffffff;
+	--cafeoscuro-color:#572612;
+	--cafemasoscuro-color:#301309;
+	--amarillo-color:#f9d544;
+}
+/*header*/
+#box-header{
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content: center;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.logo{
+    display: flex;
+    text-align: center;
+    margin: 0px 20px;
+}
+.logo h1{
+    font-family:'Dancing Script', cursive;
+    color: var(--amarillo-color);
+    font-size: 35px;
+    text-shadow: 0px 0px 2px black;
+}
+.menu li{
+
+    list-style: none;
+    display: none;
+}
+.menu a{
+    text-decoration: none;
+    color: #301309;
+}
+.menu li, select{
+    border: none;
+    font-size: 14px;
+}
+.menu li input{
+border-top: none; border-left: none; border-right: none;
+border-bottom: 1px solid var(--cafemasoscuro-color);
+width: 120px;
+
+}
+.menu li, input:focus{
+    border: none;
+}
+#chk-menu{
+    display: none;
+}
+#chk-menu:checked ~ .item{
+    display:flex;
+    justify-content:flex-start;
+}
+
+.btn-menu{
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+
+
+
+/*-----------------------medias HEADER-----------------------*/
+@media screen and (min-width:700px){
+     
+    #box-header{
+        grid-template-columns: 30% 70%;
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    .menu li, select{
+        border: none;
+        font-size: 12px;
+    }
+    .logo h1{
+        font-size: 60px;
+        font-family: 'Dancing Script', cursive;
+        }
+        .btn-menu{
+            display: none;
+        }
+    .menu li{
+    width: 90vw;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    }
+   }
+   @media screen and (min-width:1000px){
+       
+       .menu{margin-right: 20px;
+           display: flex;
+           align-items: center;
+           flex-direction: row;
+           
+       }
+       .menu li, select{
+          
+           border: none;
+           font-size: 15px;
+       }
+       .logo h1{
+           font-size: 90px;
+           text-shadow: 1px 1px 5px black;
+           }
+       .btn-menu{
+               display: none;
+           }
+       .menu li{
+        width: 100vw;
+       display:flex;
+       justify-content: center;
+       align-items: center;
+           }
+       }
+   
