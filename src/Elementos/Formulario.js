@@ -9,14 +9,14 @@ const colores ={
 
 const Formulario = styled.form`
 background-color: rgba(44, 44, 60, 0.7);
-padding: 2rem;
+padding: 3rem;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
 border-radius: 10px;
-height: 80vh;
-width: 35%;
+height: 82.2vh;
+width: 38%;
 `;
 
 const H2 = styled.h1`
