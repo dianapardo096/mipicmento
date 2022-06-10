@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/mipicmento/static/css/main.f9aa2c71.css",
+    "main.js": "/mipicmento/static/js/main.5b34bc6f.js",
+    "static/media/fondomovil.jpg": "/mipicmento/static/media/fondomovil.ba26cb38004ce92e8851.jpg",
+    "static/media/fondoform.PNG": "/mipicmento/static/media/fondoform.4b8eb82e7673e4c92401.PNG",
+    "static/media/fondo.jpeg": "/mipicmento/static/media/fondo.d8e185933d4f42f955be.jpeg",
+    "static/media/fondoform.jpg": "/mipicmento/static/media/fondoform.353954ae66810dfbe6bd.jpg",
+    "static/media/lienzoscaballete_18.png": "/mipicmento/static/media/lienzoscaballete_18.60a691a7cfc271bf4813.png",
+    "index.html": "/mipicmento/index.html",
+    "static/media/bandera.svg": "/mipicmento/static/media/bandera.d8f36acf50ebba7703df5e3300b145dc.svg",
+    "static/media/Line 1.svg": "/mipicmento/static/media/Line 1.d3a0200680aad417cbdf258e998176b1.svg",
+    "main.f9aa2c71.css.map": "/mipicmento/static/css/main.f9aa2c71.css.map",
+    "main.5b34bc6f.js.map": "/mipicmento/static/js/main.5b34bc6f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f9aa2c71.css",
+    "static/js/main.5b34bc6f.js"
+  ]
+}
