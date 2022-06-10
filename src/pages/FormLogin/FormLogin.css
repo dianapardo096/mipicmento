@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
 *{
   box-sizing: border-box;
   font-family: 'Baloo 2', cursive;
   margin: 0px;
   padding: 0px;
+  font-family: 'Baloo 2', cursive;
 }
 
 .login-fondo{
@@ -21,8 +23,9 @@
   font-family: 'Baloo 2', cursive;
 }
 
-h3{
+.continue{
   color: white;
+  align-items: center;
 }
 
 .link{

@@ -44,7 +44,7 @@ function FormLogin ()  {
       <Formulario action='' onSubmit={onSubmit}>
         <IconoUsuario icon={faPaintbrush}/>
         <H2>Inicio de sesión</H2>
-        <h3>Continua en el boton de dashboard</h3>
+        <h4 className='continue'>Continua en el boton de dashboard</h4>
         <CompInput
         estado={usuario}
         cambiarEstado={cambiarUsuario}
@@ -86,7 +86,7 @@ function FormLogin ()  {
         <BotonInicio>
          
         <Boton2 type='submit'><Link to="/dashboard" className='link'>Dashboard</Link></Boton2>
-          <a>Este es un login provisional para ingresar a mis paginas.<br/> El botón "ingresar" si tiene validaciones</a>
+          <h6 className='continue'>Este es un login provisional para ingresar a mis paginas.<br/> El botón "ingresar" si tiene validaciones</h6>
         </BotonInicio>
       </Formulario>
     </main>

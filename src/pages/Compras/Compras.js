@@ -1,19 +1,27 @@
-import React from "react";
+import React, { useState } from 'react';
 import './Compras.css';
 import Header from "../../componentes/Header/Header";
 import Footer from "../../componentes/Footer";
-import ItemCount from '../../componentes/ItemCount/ItemCount'
+import ItemCount from '../../componentes/ItemCount/ItemCount';
+import Lienzo from '../../img/lienzoscaballete_18.png';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from "react-router-dom";
 
 
 function Compras() {
 
-    const onAdd=(quantity) =>{
-        console.log('Compraste '+ quantity +' unidades');
-        const price= quantity*18000;
-        alert('cuestan '+price);
+    const onAdd = (quantity) => {
+        console.log('Compraste ' + quantity + ' unidades');
+        const price = quantity * 18000;
+        alert('Total Parcial $' + price);
     }
+
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
     return (
         <div>
@@ -26,7 +34,7 @@ function Compras() {
                     <div class="product">
 
                         <div class="image">
-                            <img src="../../assets/images/subproductos/lienzos/lienzoscaballete_18.png" alt="" />
+                            <img src={Lienzo} />
                         </div>
 
                         <div class="description">
@@ -35,11 +43,30 @@ function Compras() {
                             </div>
                             <div class="description_edit_cancel">
                                 <div class="description_edit">
-                                    <a href="">Editar</a>
+                                    <button className="btn-remov">Editar</button>
                                 </div>
                                 <div class="description_cancel">
-                                    <a href="#g-modal" class="cta">Remover</a>
+                                    <button className="btn-remov" onClick={handleShow}>Remover</button>
                                 </div>
+
+
+                                <Modal show={show} onHide={handleClose} animation={false}>
+                                    <Modal.Header closeButton>
+                                        <Modal.Title>¿Esta seguro que desea eliminar este producto?</Modal.Title>
+                                    </Modal.Header>
+                                    <Modal.Body>Lienzo con caballete <br/>
+                                    <img src={Lienzo}  alig-items="center"/> 
+                                    </Modal.Body>
+                                    <Modal.Footer>
+                                        <button className='btn-cancelar' onClick={handleClose} >
+                                            Cancelar
+                                        </button>
+                                        <button className='btn-eliminar'><Link to='/dashboard' className='link'>
+                                            Eliminar</Link>
+                                        </button>
+                                    </Modal.Footer>
+                                </Modal>
+
 
                             </div>
                             <div class="description_price_unit">
@@ -48,11 +75,11 @@ function Compras() {
                             </div>
                             <div class="description_amount">
                                 <h3>Cantidad</h3>
-                                <ItemCount initial={1} stock={8} onAdd={onAdd}/>
+                                <ItemCount initial={1} stock={8} onAdd={onAdd} />
                             </div>
                             <div class="description_price_total">
                                 <h3>Precio total</h3>
-                                <p>$18.000</p>
+                                <p>$ {onAdd.quantity}</p>
                             </div>
                         </div>
 
@@ -84,7 +111,7 @@ function Compras() {
 
                     <div class="Notices">
                         <div class="NoticeShipping">
-                           
+
                         </div>
                     </div>
 

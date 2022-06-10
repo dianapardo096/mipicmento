@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 *{
     box-sizing: border-box;
-    margin: 0px;
+    margin: 1rem;
+    font-family: 'Baloo 2', cursive;
 }
 
 :root{
@@ -19,6 +20,8 @@ body{
     font-family: 'Baloo 2', cursive;
     font-size: 1rem;
     color: var(--cafeoscuro-color);
+    background-color: #fff;
+    
 }
 
 
@@ -47,6 +50,33 @@ body{
     font-size: 2rem;
     font-weight:bolder;
     margin: 0px;
+}
+
+.btn-remov{
+    background:none ;
+    border:none;
+}
+
+.btn-eliminar{
+    background-color: #f9d544;
+    margin: 0.5rem;
+    padding: 0.4rem;
+    border-radius: 3px;
+    border-color: var(--cafeoscuro-color);
+    color: var(--cafeoscuro-color);
+}
+
+.btn-cancelar{
+    background-color: #585753;
+    color: white;
+    margin: 0.5rem;
+    padding: 0.4rem;
+    border-radius: 3px;
+}
+
+.link{
+    text-decoration: none;
+    color: var(--cafeoscuro-color);
 }
 
 
@@ -413,6 +443,7 @@ body{
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(3, auto);
+        background-color: #fff;
     }
 
     .mycart{
