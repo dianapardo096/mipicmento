@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
+:root{
+    --negro-color:#191919;
+	--blanco-color:#ffffff;
+	--cafeoscuro-color:#572612;
+	--cafemasoscuro-color:#301309;
+	--amarillo-color:#f9d544;
+}
+.btn-counter{
+    align-items: center;
+    font-weight: 800;
+    justify-content: center;
+    font-family: 'Baloo 2', cursive;
+    color: var(--cafeoscuro-color);
+    background-color: var(--amarillo-color);
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0.3rem;
+    padding-bottom: 0.2rem;
+    border-radius: 90%;
+    border-color: 2px solid var(--cafemasoscuro-color);
+    cursor: pointer;   
+}

@@ -2,11 +2,19 @@ import React from "react";
 import './Compras.css';
 import Header from "../../componentes/Header/Header";
 import Footer from "../../componentes/Footer";
+import ItemCount from '../../componentes/ItemCount/ItemCount'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
 
+
 function Compras() {
+
+    const onAdd=(quantity) =>{
+        console.log('Compraste '+ quantity +' unidades');
+        const price= quantity*18000;
+        alert('cuestan '+price);
+    }
+
     return (
         <div>
             <Header />
@@ -40,7 +48,7 @@ function Compras() {
                             </div>
                             <div class="description_amount">
                                 <h3>Cantidad</h3>
-                                <input type="number" />
+                                <ItemCount initial={1} stock={8} onAdd={onAdd}/>
                             </div>
                             <div class="description_price_total">
                                 <h3>Precio total</h3>
@@ -76,7 +84,7 @@ function Compras() {
 
                     <div class="Notices">
                         <div class="NoticeShipping">
-                            <h1>Si tu compra es superior a $40.000 tu envio será gratis</h1>
+                           
                         </div>
                     </div>
 
