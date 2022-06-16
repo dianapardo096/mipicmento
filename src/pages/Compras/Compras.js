@@ -4,22 +4,26 @@ import Header from "../../componentes/Header/Header";
 import Footer from "../../componentes/Footer";
 import ItemCount from '../../componentes/ItemCount/ItemCount';
 import Lienzo from '../../img/lienzoscaballete_18.png';
-import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from "react-router-dom";
 
 
-function Compras() {
-
+function Compras(count) {
+//funciones del contador
     const onAdd = (quantity) => {
         console.log('Compraste ' + quantity + ' unidades');
         const price = quantity * 18000;
-        alert('Total Parcial $' + price);
+        /*alert('Total Parcial $' + price);*/
     }
 
-    const [show, setShow] = useState(false);
+const [num, setNum]=useState(count);           
+const num1 = ()=> setNum (count*18000);
 
+
+
+//hooks del modal
+    const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
@@ -39,7 +43,7 @@ function Compras() {
 
                         <div class="description">
                             <div class="description_name">
-                                <h2>Nombre del producto</h2>
+                                <h2>Lienzo con caballete</h2>
                             </div>
                             <div class="description_edit_cancel">
                                 <div class="description_edit">
@@ -67,7 +71,6 @@ function Compras() {
                                     </Modal.Footer>
                                 </Modal>
 
-
                             </div>
                             <div class="description_price_unit">
                                 <h3>Precio und.</h3>
@@ -79,7 +82,7 @@ function Compras() {
                             </div>
                             <div class="description_price_total">
                                 <h3>Precio total</h3>
-                                <p>$ {onAdd.quantity}</p>
+                                <p>$ {num1}</p>
                             </div>
                         </div>
 
