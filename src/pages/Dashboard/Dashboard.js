@@ -22,35 +22,35 @@ function Dashboard(){
                 <li><Link to="/compras" className='item'> <FontAwesomeIcon icon={faCartShopping} className='item'/>  Mi Carrito </Link></li>
             </ul> 
         </div> 
-        <article className="user">
+        <div className="user">
             <div className="user_title">
-                <h2>Datos de usuario</h2>
+                <h1>Datos de usuario</h1>
             </div>
             <div className="user_information">
                 <div className="user_information_name">
-                    <h3>Nombre:</h3>
+                    <h5>Nombre:</h5>
                     <p>Maria Paula Sanchez Avila</p>
                 </div>
                 <div className="user_information_email">
-                    <h3>Correo:</h3>
+                    <h5>Correo:</h5>
                     <p>mpsancheza@gmail.com</p>
                 </div>
                 <div className="user_information_adress">
-                    <h3>Dirección</h3>
+                    <h5>Dirección</h5>
                     <p>Diagonal 82 #72a 55  Bogotá, Colombia</p>
                      <a href="">editar</a>
                 </div>
                 <div className="user_information_phone">
-                    <h3>Número  de teléfono</h3>
+                    <h5>Número  de teléfono</h5>
                     <p>+57 3112582303</p> <a href="">editar</a>
                 </div>
                 <div className="user_information_editPassword">
-                    <h3>Contraseña</h3>
+                    <h5>Contraseña</h5>
                     <a href="">Cambiar contraseña</a>
                 </div>
 
             </div>
-        </article>
+        </div>
 
     </div>
 </body>
