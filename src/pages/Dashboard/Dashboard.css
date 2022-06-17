@@ -49,14 +49,16 @@ body{
     grid-row: 2/3;
     align-items: center;
     margin-bottom: 0px;
+    margin-left: 0.5rem;
 }
 h3{
     color: var(--cafeoscuro-color);
 }
 .sidebar ul{
     margin-top: 0.5rem;
-    list-style: none;
+    list-style:none;
     padding-left: 0px;
+    font-size: 5rem;
     display: flex;
     flex-direction: column;
     border-top: 2px solid var(--cafemasoscuro-color) ;
@@ -66,11 +68,12 @@ h3{
 .sidebar a{
     color: var(--cafeoscuro-color);
     width: 100%;
-    font-size: 1rem;
     font-weight: bold;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
     text-decoration: none;
-    padding: 8px;
     display: block;
+    border-bottom: 1px solid var(--cafemasoscuro-color);
 }
 
 .sidebar i{
@@ -81,6 +84,7 @@ h3{
     background-color: var(--amarillo-color);
     cursor: pointer;
     transform: scale(1.05);
+    border-bottom: none;
 }
 
 

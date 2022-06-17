@@ -18,8 +18,8 @@ function Dashboard(){
         </div>
         <div className="sidebar">
             <ul>
-            <li><Link to="/dashboard" className='item'><FontAwesomeIcon icon={faUser} className='item'/> Mi perfil </Link></li>
-                <li><Link to="/compras" className='item'> <FontAwesomeIcon icon={faCartShopping} className='item'/>  Mi Carrito </Link></li>
+            <li><Link to="/dashboard" className='items'><FontAwesomeIcon icon={faUser} className='item'/> Mi perfil </Link></li>
+            <li><Link to="/carrito" className='item'> <FontAwesomeIcon icon={faCartShopping} className='item'/>  Mi Carrito </Link></li>
             </ul> 
         </div> 
         <div className="user">

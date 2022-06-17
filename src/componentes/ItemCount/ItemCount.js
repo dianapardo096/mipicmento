@@ -20,13 +20,13 @@ export const ItemCount= ({initial, stock, onAdd})=> {
 
 
     return(
-        <div>
+        <div className='pcounter'>
         <div className='counter'>
             <button className='btn-counter' onClick={decrease} disabled={count<=initial}>-</button>
-            <span>{count}</span>
+            <span className='span'>{count}</span>
             <button className='btn-counter' onClick={increase} disabled={count>=stock}>+</button>
         </div>
-        <div>
+        <div className='calculate'>
         <button className='btn-calculate'  disabled={stock <= 0} onClick={()=> onAdd(count)}>Calcular</button>
         </div>
         </div>

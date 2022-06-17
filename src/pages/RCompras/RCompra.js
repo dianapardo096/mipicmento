@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Compras.css';
+import './RCompra.css';
 import Header from "../../componentes/Header/Header";
 import Footer from "../../componentes/Footer";
 import ItemCount from '../../componentes/ItemCount/ItemCount';
@@ -9,12 +9,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from "react-router-dom";
 
 
-function Compras(count) {
+function RCompra(count) {
 //funciones del contador
     const onAdd = (quantity) => {
         console.log('Compraste ' + quantity + ' unidades');
         const price = quantity * 18000;
-        /*alert('Total Parcial $' + price);*/
+        alert('Total Parcial $' + price);
     }
 
 const [num, setNum]=useState(count);           
@@ -31,7 +31,7 @@ const num1 = ()=> setNum (count*18000);
         <div>
             <Header />
             <body>
-                <div class="principal">
+                <div class="principalCart">
                     <div class="mycart">
                         <h1>Mi Carrito</h1>
                     </div>
@@ -65,7 +65,7 @@ const num1 = ()=> setNum (count*18000);
                                         <button className='btn-cancelar' onClick={handleClose} >
                                             Cancelar
                                         </button>
-                                        <button className='btn-eliminar'><Link to='/dashboard' className='link'>
+                                        <button className='btn-eliminar'><Link to='/vacio' className='link'>
                                             Eliminar</Link>
                                         </button>
                                     </Modal.Footer>
@@ -85,6 +85,8 @@ const num1 = ()=> setNum (count*18000);
                                 <p>$ {num1}</p>
                             </div>
                         </div>
+
+                        
 
                     </div>
 
@@ -126,4 +128,4 @@ const num1 = ()=> setNum (count*18000);
     );
 }
 
-export default Compras;
+export default RCompra;
