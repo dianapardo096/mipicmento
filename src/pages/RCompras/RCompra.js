@@ -33,7 +33,7 @@ const num1 = ()=> setNum (count*18000);
             <body>
                 <div class="principalCart">
                     <div class="mycart">
-                        <h1>Mi Carrito</h1>
+                        <h1>Detalles de la compra</h1>
                     </div>
                     <div class="product">
 
@@ -42,47 +42,24 @@ const num1 = ()=> setNum (count*18000);
                         </div>
 
                         <div class="description">
-                            <div class="description_name">
-                                <h2>Lienzo con caballete</h2>
-                            </div>
-                            <div class="description_edit_cancel">
-                                <div class="description_edit">
-                                    <button className="btn-remov">Editar</button>
-                                </div>
-                                <div class="description_cancel">
-                                    <button className="btn-remov" onClick={handleShow}>Remover</button>
+                            <div class="description_product">
+                                <div class="description_product_name">
+                                <h3>Lienzo con caballete</h3>
+                                <p>60x24 cm</p>
                                 </div>
 
-
-                                <Modal show={show} onHide={handleClose} animation={false}>
-                                    <Modal.Header closeButton>
-                                        <Modal.Title>¿Esta seguro que desea eliminar este producto?</Modal.Title>
-                                    </Modal.Header>
-                                    <Modal.Body>Lienzo con caballete <br/>
-                                    <img src={Lienzo}  alig-items="center"/> 
-                                    </Modal.Body>
-                                    <Modal.Footer>
-                                        <button className='btn-cancelar' onClick={handleClose} >
-                                            Cancelar
-                                        </button>
-                                        <button className='btn-eliminar'><Link to='/vacio' className='link'>
-                                            Eliminar</Link>
-                                        </button>
-                                    </Modal.Footer>
-                                </Modal>
-
                             </div>
-                            <div class="description_price_unit">
-                                <h3>Precio und.</h3>
-                                <p>$18.000</p>
+                            <div class="description_direction">
+                                <h3>Dirección de entrega</h3>
+                                <p>Dg 82 #72a 55</p>
                             </div>
-                            <div class="description_amount">
-                                <h3>Cantidad</h3>
-                                <ItemCount initial={1} stock={8} onAdd={onAdd} />
+                            <div class="description_wayToPay">
+                                <h3>Forma de pago</h3>
+                                <p>Contraentrega</p>
                             </div>
-                            <div class="description_price_total">
-                                <h3>Precio total</h3>
-                                <p>$ {num1}</p>
+                            <div class="description_date">
+                                <h3>Fecha entrega</h3>
+                                <p>18/06/2022</p>
                             </div>
                         </div>
 
@@ -93,24 +70,27 @@ const num1 = ()=> setNum (count*18000);
                     <div class="summary">
                         <h2>Resumen del pedido</h2>
 
-                        <div class="summary_subtotal">
-                            <p>Total parcial</p>
+                        <div class="summary_uprice">
+                            <p>Valor unidad</p>
                             <p>$18.000</p>
                         </div>
-                        <div class="summary_envio">
-                            <p>Envío</p>
+                        <div class="summary_units">
+                            <p>Cantidad</p>
+                            <p>2</p>
+                        </div>
+                        <div class="summary_ptotal">
+                            <p>Total Parcial</p>
+                            <p>$36.000</p>
+                        </div>
+                        <div class="summary_Shipping">
+                            <p>Costo de envio</p>
                             <p>$4.000</p>
                         </div>
-                        <div class="summary_total">
+                        <div class="summary_totalf">
                             <p>Total</p>
-                            <p>$22.000</p>
+                            <p>$40.000</p>
                         </div>
-                        <div class="summary_boton_one">
-                            <a href="index.html"><button>Seguir comprando</button></a>
-                        </div>
-                        <div class="summary_boton_two">
-                            <a href="datos_envio.html"><button>Finalizar compra</button></a>
-                        </div>
+
 
                     </div>
 

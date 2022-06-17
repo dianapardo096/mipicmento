@@ -15,8 +15,25 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 border-radius: 10px;
-height: 82.2vh;
-width: 38%;
+height: 60vh;
+width: 90%;
+
+
+@media (min-width: 700px){
+	height: 55vh;
+	width: 50%;	
+}
+
+@media (min-width: 1000px){
+	height: 82vh;
+	width: 45%;	
+}
+
+@media (min-width: 1440px){
+	height: 88vh;
+	width: 30%;	
+}
+
 `;
 
 const H2 = styled.h1`
@@ -99,12 +116,19 @@ display: flex;
 justify-content: center;
 align-items: center;
 background-color: rgb(223, 94, 94);
-width: 95%;
+width: 98%;
 border-radius: 3px;
 color:#fff;
-padding:0.2rem;
+padding-left:0.3rem;
+padding-right: 0.3rem;
+padding-top:0.4rem;
 font-size: 0.9rem;
-margin-top: 0.3rem;
+margin-top: 1rem;
+margin-bottom: 0.5rem;
+
+@media (min-width: 1000px){
+	width: 70%;
+}
 `;
 
 const MensajeExito= styled.div`
@@ -131,6 +155,12 @@ width: 100%;
 h3,a{
 	color: #fff;
 }
+
+@media (min-width: 1000px){
+	margin: 0.5rem;
+}
+
+
 `;
 
 const Boton = styled.button`	
